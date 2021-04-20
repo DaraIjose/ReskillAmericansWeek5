@@ -1,21 +1,5 @@
 /*css*/
 
-@font-face  {
-    font-family: opensans;
-    src: url(font/opensans.ttf);
-    
-}
-@font-face  {
-    
-    font-family: opensansbold;
-    src: url(font/opensansbold.ttf);
-}
-
-@font-face  {
-    
-    font-family: opensanslight;
-    src: url(font/opensanslight.ttf);
-}
 * {
     padding: 0;
     margin: 0;
@@ -62,31 +46,22 @@ footer {
     
 }
 
-/*#container {
-    display: grid;
-    height: 80vh;
-    width: 100vw;
-    grid-template-columns: 1fr 4fr;
-    justify-content: center;
-    grid-column-gap: 60px;
-    
-}
-*/
-
 p {
     color: white;
 }
 
 .build {
     font-size: 30px;
-    font-family: opensansbold;
+    font-family: Open Sans, sans-serif;
+    font-weight: 700;
     margin-bottom: 30px;
     margin-right: 60%;
 
     
 }
 .huddle {
-    font-family: opensans;
+    font-family: Open Sans, sans-serif;
+    font-weight: 400;
     font-size: 16px;
     margin-bottom: 30px;
     margin-right: 45%;
@@ -100,7 +75,8 @@ button{
     color: hsl(257, 40%, 49%);
     display: inline-block;
     font-size: 15px;
-    font-family: opensanslight;
+    font-family: Open Sans, sans-serif;
+    font-weight: 300;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     margin-bottom: 40px;
     
@@ -123,7 +99,7 @@ footer {
         flex-direction: column;
     }
     main {
-        height: 70vh;
+        height: 90vh;
     }
 }
 

@@ -20,6 +20,7 @@ body {
     background-image: url(backgroundimages/bg-desktop.svg);
     display: flex;
     flex-direction: column;
+   
 }
 
 header {

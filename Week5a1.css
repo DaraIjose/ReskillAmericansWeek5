@@ -18,69 +18,64 @@
 body {
     background-color: hsl(257, 40%, 49%);
     background-image: url(backgroundimages/bg-desktop.svg);
-    display: flex;
-    flex-direction: column;
-   
 }
 
 header {
-    padding: 60px;
+    padding: 50px;
 }
-
 .wrapper {
-    text-align: center;
-    padding: 40px 40px;
     display: flex;
-    flex-direction: column;
     align-items: center;
-}
-
-.image {
-    max-width: 100%;
-    
+    margin: 60px;
 }
 
 .sec-1 {
-    width: 90%;
-    height: auto;
-    text-align: center;
-    margin: 50px;
+    flex: 1;
 }
-
-p {
+.sec-2 {
+    flex: 1;
+    width: 100%;
     color: white;
 }
-
+.image {
+    width: 90%;
+}
 .build {
+    font-family: opensansbold;
     font-size: 50px;
-    font-family: opensans;
-    font-weight: 700;
+    width: 50%;
 }
 
 .huddle {
     font-family: opensans;
-    font-size: 18px;
-    font-weight: 400;
-    margin-bottom: 50px;
-    
+    font-size: 30px;
+    width: 75%;
 }
+
 button{
     border-radius: 40px;
     background-color: white;
     border: none;
+    width: 220px;
+    height: 60px;
     padding: 12px 60px;
     color: hsl(257, 40%, 49%);
     display: inline-block;
     font-size: 15px;
     font-family: opensanslight;
+    font-weight: 400;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     margin-bottom: 30px;
 }
 
 footer {
     color: white;
-    padding: 0 30px;
-    text-align: right;
+    /* padding: 0 30px;
+    text-align: right; */
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 60px;
+    margin-bottom: 100%;
 }
 
 .icon {
@@ -94,85 +89,49 @@ footer {
     text-align: right;
 }
 .fa-twitter {
-    margin-top: 9px;
-    margin-right: 9px;
+    margin-top: 10px;
+    margin-left: 10px;
 }
 
 .fa-instagram {
-    margin-top: 9px;
-    margin-right: 9px;
+    margin-top: 10px;
+    margin-left: 10px;
 }
 
 .fa-facebook {
-    margin-top: 9px;
-    margin-right: 9px;
-}
+    margin-top: 10px;
+    margin-left: 10px;
+} 
 
-/* iphone*/
-@media (min-width: 375px) {
- 
-    .sec-1 {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-
-    }
-    .wrapper {
-        margin: 20px auto;
-        padding: 40px;  
-    }
-    .sec-2 {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 100%;
-    }
-    footer {
-        text-align: center;
-        margin-bottom: ;
-        color: white;
-        padding: 0 30px;
-        text-align: center;
-        display: flex;
-        justify-content: center; 
-        }
-    .fa-twitter {
-        margin-top: 9px;
-        margin-left: 9px;
-        }
-        
-    .fa-instagram {
-        margin-top: 9px;
-        margin-left: 9px;
-        }
-        
-    .fa-facebook {
-            margin-top: 9px;
-            margin-left: 9px;
-        }
-}
-
-@media (min-width: 1440px) {
+@media screen and (max-width: 800px) {
     .wrapper {
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;    
+    }
+    .image {
+        width: 300px;
+    }
+    .sec-1 {
+        display: flex;
+        flex: 1;
+    }
+    .sec-2 {
+        display: flex;
+        flex: 1;
+        text-align: center; 
+        padding: 30px;  
+        width: 100%;
+        height: 460px;
     }
     footer {
-        text-align: right;
-        margin-bottom: ;
         color: white;
-        padding: 0 30px; 
         display: flex;
-        margin-left: 55%;
-        
+        justify-content: center;
+        margin-bottom: 100px;
     }
-    .icon {
-        text-align: right;
-    }
+} 
 
-    .sec-2 {
-        padding-left: 80px;
-        padding-right: 80px;
-        margin-right: 400px;
-    }
-}
+

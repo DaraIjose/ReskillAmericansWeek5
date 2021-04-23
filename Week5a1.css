@@ -103,7 +103,11 @@ footer {
     margin-left: 10px;
 } 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
+    body {
+        background-color: hsl(257, 40%, 49%);
+        background-image: url(backgroundimages/bg-mobile.svg);
+    }
     .wrapper {
         display: flex;
         flex-direction: row;

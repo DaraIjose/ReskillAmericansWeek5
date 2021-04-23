@@ -18,6 +18,8 @@
 body {
     background-color: hsl(257, 40%, 49%);
     background-image: url(backgroundimages/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: auto;
 }
 
 header {
@@ -25,8 +27,12 @@ header {
 }
 .wrapper {
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 30px 60px 0px 60px;
+    max-width: 100%;
+    max-height: 100%;
     align-items: center;
-    margin: 60px;
 }
 
 .sec-1 {
@@ -39,17 +45,19 @@ header {
 }
 .image {
     width: 90%;
+    padding: 5px;
+
 }
 .build {
     font-family: opensansbold;
     font-size: 50px;
-    width: 50%;
+    width: 80%;
 }
 
 .huddle {
-    font-family: opensans;
-    font-size: 30px;
-    width: 75%;
+    font-family: opensanslight;
+    font-size: 25px;
+    width: 90%;
 }
 
 button{
@@ -67,11 +75,13 @@ button{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     margin-bottom: 30px;
 }
+Button:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+}
 
 footer {
     color: white;
-    /* padding: 0 30px;
-    text-align: right; */
     display: flex;
     justify-content: flex-end;
     margin-right: 60px;
@@ -103,38 +113,56 @@ footer {
     margin-left: 10px;
 } 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     body {
-        background-color: hsl(257, 40%, 49%);
         background-image: url(backgroundimages/bg-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: top;
     }
-    .wrapper {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        text-align: center;    
+    header {
+        width: 45%;
+    }
+    .wrapper { 
+        padding: 40px;
+        align-content: center;
     }
     .image {
         width: 500px;
-    }
-    .sec-1 {
-        display: flex;
-        flex: 1;
+        margin-top: 50px;
+        justify-content: center; 
     }
     .sec-2 {
-        display: flex;
-        flex: 1;
-        text-align: center; 
-        padding: 30px;  
         width: 100%;
-    }
-    footer {
-        color: white;
-        display: flex;
+        text-align: center;
         justify-content: center;
-        margin-bottom: 100px;
     }
+    .build {
+        font-size: 30px;
+        width: 75%;
+        align-items: center;
+        margin: auto;
+        margin-top: 4px;
+    }
+    
+    .huddle {
+        font-size: 20px;
+        width: 75%;
+        text-align: center;
+        justify-content: center;
+        margin: auto;
+        margin-top: 4px;
+    }
+   
+    button {
+        margin: auto;
+        margin-top: 20px;
+    }
+   
+   footer {
+       justify-content: center;
+       margin-left: 60px;
+   }
 } 
 
 

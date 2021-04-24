@@ -33,6 +33,7 @@ header {
     max-width: 100%;
     max-height: 100%;
     align-items: center;
+    justify-content: flex-start;
 }
 
 .sec-1 {
@@ -81,39 +82,28 @@ Button:hover {
 }
 
 footer {
-    color: white;
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 60px;
-    
+    width: 100%;
+    text-align: end;
 }
 
-.icon {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%; 
+.icons {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    outline: none;
     border: 2px solid white;
-    margin-right: 10px;
-    margin-left: 10px;
-    display: flex;
-    text-align: right;
-}
-.fa-twitter {
-    margin-top: 10px;
-    margin-left: 10px;
+    margin-right: 5px;
 }
 
-.fa-instagram {
-    margin-top: 10px;
-    margin-left: 10px;
+.icon:active {
+    color: hsl(300, 69%, 71%);
+    border: 1px solid hsl(300, 69%, 71%);
 }
 
-.fa-facebook {
-    margin-top: 10px;
-    margin-left: 10px;
-} 
 
-@media screen and (max-width: 700px) {
+
+@media (max-width: 750px) {
     body {
         background-image: url(backgroundimages/bg-mobile.svg);
         background-repeat: no-repeat;
@@ -128,30 +118,29 @@ footer {
         align-content: center;
     }
     .image {
-        width: 500px;
+        width: 100%;
         margin-top: 50px;
         justify-content: center; 
     }
     .sec-2 {
         width: 100%;
         text-align: center;
-        justify-content: center;
+        /* justify-content: center; */
     }
     .build {
-        font-size: 30px;
-        width: 75%;
-        align-items: center;
+        width: 100%;
+        text-align: center;
+        /* align-items: center;
         margin: auto;
-        margin-top: 4px;
+        margin-top: 4px; */
     }
     
     .huddle {
-        font-size: 20px;
-        width: 75%;
+        width: 100%;
         text-align: center;
-        justify-content: center;
-        margin: auto;
-        margin-top: 4px;
+        /* justify-content: center; */
+        /* margin: auto;
+        margin-top: 4px; */
     }
    
     button {
@@ -160,8 +149,10 @@ footer {
     }
    
    footer {
-       justify-content: center;
-       margin-left: 60px;
+       /* justify-content: center;
+       margin-left: 60px; */
+       margin-top: 50px;
+        text-align: center;
    }
 } 
 

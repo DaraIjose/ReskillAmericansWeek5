@@ -1,0 +1,124 @@
+body {
+    background-color: hsl(257, 40%, 49%);
+    background-image: url(backgroundimages/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-weight: 400;
+    font-size: 35px;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 18px;
+}
+
+.button {
+    background-color: white;
+    color: hsl(257, 40%, 49%);
+    border-radius: 45px;
+    height: 45px;
+    width: 160px;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+    outline: none;
+    border: 3px black;
+    box-shadow: 5px 5px 10px hsl(0, 0%, 27%);
+
+}
+
+.button:active {
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+}
+
+.icons {
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 50%;
+    font-family: 'Open Sans', sans-serif;
+    height: 35px;
+    width: 35px;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid white;
+}
+
+.icons:active {
+    color: hsl(300, 69%, 71%);
+    border: 2px solid hsl(300, 69%, 71%);
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 30px 60px 0px 60px;
+    max-width: 100%;
+    max-height: 100%;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.logo {
+    width: 100%
+}
+
+.image {
+    margin-top: 80px;
+    padding: 5px;
+    width: 60%;
+}
+
+.text {
+    width: 38%;
+}
+
+footer {
+    width: 100%;
+    text-align: end;
+}
+
+@media (max-width: 700px) {
+    body {
+        background-image: url("backgroundimages/bg-mobile.svg");
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: auto;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    #container {
+        padding: 20px;
+        align-content: center;
+    }
+
+    .logo {
+        width: 43%;
+    }
+
+    .image {
+        width: 100%;
+        margin-top: 50px;
+        justify-content: center;
+    }
+
+    .text {
+        width: 100%;
+        text-align: center;
+    }
+
+    footer {
+        margin-top: 50px;
+        text-align: center;
+    }
+}
+
